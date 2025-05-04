@@ -1,0 +1,14 @@
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.vscode/
+config.php
+.env
+*.log
+*.bak
+demo.mp4
+*.zip
+*.rar
+*.tmp
+*.swp
+*.~*
