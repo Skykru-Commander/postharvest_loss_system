@@ -12,7 +12,7 @@ if(isset($_POST['register'])) {
     // get role from form
     $role = $_POST['role'];
 
-    // Use prepared statement to prevent SQL injection
+    // prepared statement to prevent SQL injection
     $stmt = $conn->prepare("INSERT INTO users (username, password, role) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $username, $hashed_password, $role);
     if ($stmt->execute()) {
